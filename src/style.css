@@ -1,0 +1,145 @@
+:root {
+  --bg: #130400;
+  --card: #2b0a00;
+  --text: #e2c59f;
+  --accent: #ff3c00;
+}
+
+body {
+  margin: 0;
+  font-family: 'Fira Code';
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.03) 0px,
+        rgba(255,255,255,0.03) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    z-index: 999;
+}
+
+header {
+  animation: fadeIn 0.8s ease forwards;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.section {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+  position: relative;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.section.about, .section.project {
+    position: relative;
+}
+
+.corner-gif.gordon {
+    position: absolute;
+    top: -100px;   /* distance from top */
+    right: 30px;    /* distance from right */
+    width: 150px;    /* size of your GIF */
+    height: auto;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.corner-gif.hecu {
+    position: absolute;
+    top: -30px;   /* distance from top */
+    right: 30px;    /* distance from right */
+    width: 100px;    /* size of your GIF */
+    height: auto;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--card);
+  padding: 1rem;
+  border: 2px solid var(--accent);
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(255, 60, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px var(--accent), 0 0 40px rgba(255, 60, 0, 0.4);
+}
+
+.skills {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.skill {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--card);
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--accent);
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px var(--accent), 0 0 40px rgba(255, 60, 0, 0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
