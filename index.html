@@ -10,134 +10,184 @@
     <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
     <title>Hugo's Portfolio</title>
 </head>
-<body>
-  <header>
-      <h1>Hi, I'm Hugo! 👋</h1>
-      <p>Game Developer • Game Designer</p>
-  </header>
-
-  <section class="section about">
-    <h2>About ℹ️</h2>
-    <div class="card">
-      <img src="src/pic.jpeg" alt="My picture" />
-      <p>Hi, I'm Hugo, an aspiring Game Developer and Designer who goes by the username aaaa~. I'm currently writing a dissertation about rage games. I...</p>
-      <ul>
-          <li>Make up ideas for games,</li>
-          <li>Create mechanics for games, and</li>
-          <li>bring ideas to life!</li>
-      </ul>
-      <p>If you are interested in contacting me, send me an email at <a href="mailto:hugofilipemirandaramos2003@gmail.com" target="_blank">hugofilipemirandaramos2003@gmail.com</a></p>
-      <h3>Education 📖</h3>
-      <ul>
-          <li>Bachelor in Computer Engineering (Universidade Portucalense, 2024)</li>
-          <li>Multimedia Masters (FEUP, 2026)</li>
-      </ul>
-      <h3>Internships 📖</h3>
-      <ul>
-          <li>XPLORA (2024) - I was tasked with developing an Android mobile application with XR capabilities.</li>
-      </ul>
-      <h3>Interests ❤️</h3>
-      <ul>
-          <li>Boomer Shooters</li>
-          <li>Collecting Figures</li>
-          <li>Grunge Music</li>
-          <li>Neon Genesis Evangelion</li>
-          <li>Demon Slayer</li>
-      </ul>
-      <h3>Language Proficiency 🌍</h3>
-      <p>I'm a native <b>Portuguese</b> Speaker and fluent in <b>English.</b></p>
+<body onload="typeWriter()">
+    <div id="terminalDiv" class="terminal-intro">
+        <p id="terminal"></p>
     </div>
 
-    <img src="src/gordon-half-life.gif" alt="Fun GIF" class="corner-gif gordon">
-  </section>
+    <div class="main-content">
+        <header>
+                <h1>Hi, I'm Hugo! 👋</h1>
+                <p>Game Developer • Game Designer</p>
+        </header>
 
-  <section class="section project">
-      <h2>Projects 📁</h2>
-      <div class="projects">
-          <div class="card">
-              <img src="src/OWPkoh.png" alt="Holy Hell Screenshot" />
-              <h3>Holy Hell</h3>
-              <p>A boomer shooter developed in group for a game development class. A little love letter for my favorite genre.</p>
-              <ul>
-                  <li>Tasked with developing game mechanics,</li>
-                  <li>Implement features made by my peers, and</li>
-                  <li>Fix a lot of bugs...</li>
-                  <li>Tech I used: Unity, C#</li>
-              </ul>
-              <a href="https://aaaa-2003.itch.io/holy-hell" target="_blank">Game Page</a> • <a href="https://github.com/HugoFMRamos/holy-hell-game" target="_blank">View Code</a>
-          </div>
+        <section class="section about">
+            <h2>About ℹ️</h2>
+            <div class="card">
+            <img src="src/pic.jpeg" alt="My picture" />
+            <p>Hi, I'm Hugo, an aspiring Game Developer and Designer who goes by the username aaaa~. I'm currently writing a dissertation about rage games. I...</p>
+            <ul>
+                <li>Make up ideas for games,</li>
+                <li>Create mechanics for games, and</li>
+                <li>bring ideas to life!</li>
+            </ul>
+            <p>If you are interested in contacting me, send me an email at <a href="mailto:hugofilipemirandaramos2003@gmail.com" target="_blank">hugofilipemirandaramos2003@gmail.com</a></p>
+            <h3>Education 📖</h3>
+            <ul>
+                <li>Bachelor in Computer Engineering (Universidade Portucalense, 2024)</li>
+                <li>Multimedia Masters (FEUP, 2026)</li>
+            </ul>
+            <h3>Internships 📖</h3>
+            <ul>
+                <li>XPLORA (2024) - I was tasked with developing an Android mobile application with XR capabilities.</li>
+            </ul>
+            <h3>Interests ❤️</h3>
+            <ul>
+                <li>Boomer Shooters</li>
+                <li>Collecting Figures</li>
+                <li>Grunge Music</li>
+                <li>Neon Genesis Evangelion</li>
+                <li>Demon Slayer</li>
+            </ul>
+            <h3>Language Proficiency 🌍</h3>
+            <p>I'm a native <b>Portuguese</b> Speaker and fluent in <b>English.</b></p>
+            </div>
 
-          <div class="card">
-              <img src="src/nz12SY.png" alt="Withering Tears Screenshot" />
-              <h3>Withering Tears</h3>
-              <p>An interactive story game developed for an interactive narratives class. My first time utilizing the Twine engine.</p>
-              <ul>
-                  <li>I was tasked with programming the game,</li>
-                  <li>Writing the story of the game,and</li>
-                  <li>Implement everything into the engine!</li>
-                  <li>Tech I used: Twine, HTML, CSS, Javascript</li>
-              </ul>
-              <a href="https://estojostudio.itch.io/withering-tears" target="_blank">Game Page</a> • <a href="https://github.com/HugoFMRamos/NI_G04_WITHERINGTEARS" target="_blank">View Code</a>
-          </div>
-      </div>
-      <br>
-      <div class="projects">
-          <div class="card">
-              <img src="src/JzF3j6.png" alt="MeowWare! Screenshot" />
-              <h3>MeowWare!</h3>
-              <p>My second attempt at Game Jams. It is a Wario-Ware style game about closing window tabs! Very proud of this one!</p>
-              <ul>
-                  <li>Jame Game #54 (Solo)</li>
-                  <li>Theme: Spam</li>
-                  <li>Special Object: Cat</li>
-                  <li>Tech I used: Unity, C#, GIMP, Audacity</li>
-              </ul>
-              <a href="https://aaaa-2003.itch.io/meowware" target="_blank">Game Page</a> • <a href="https://github.com/HugoFMRamos/jame-gam-54-game" target="_blank">View Code</a>
-          </div>
+            <img src="src/gordon-half-life.gif" alt="Fun GIF" class="corner-gif gordon">
+        </section>
 
-          <div class="card">
-              <img src="src/5aDjTg.png" alt="Hen Stack Screenshot" />
-              <h3>Hen Stack</h3>
-              <p>My first ever game jam. It is a simple stacking game similar to Tower Bloxx. It's janky...</p>
-              <ul>
-                  <li>Mini Jame Game #47 (Solo)</li>
-                  <li>Theme: Cheap Copy</li>
-                  <li>Special Object: Egg</li>
-                  <li>Tech I used: Unity, C#, MSPaint, Audacity</li>
-              </ul>
-              <a href="https://aaaa-2003.itch.io/hen-stack" target="_blank">Game Page</a> • <a href="https://github.com/HugoFMRamos/jame-gam-47-game" target="_blank">View Code</a>
-          </div>
-      </div>
+        <section class="section project">
+            <h2>Projects 📁</h2>
+            <div class="projects">
+                <div class="card">
+                    <img src="src/OWPkoh.png" alt="Holy Hell Screenshot" />
+                    <h3>Holy Hell</h3>
+                    <p>A boomer shooter developed in group for a game development class. A little love letter for my favorite genre.</p>
+                    <ul>
+                        <li>Tasked with developing game mechanics,</li>
+                        <li>Implement features made by my peers, and</li>
+                        <li>Fix a lot of bugs...</li>
+                        <li>Tech I used: Unity, C#</li>
+                    </ul>
+                    <a href="https://aaaa-2003.itch.io/holy-hell" target="_blank">Game Page</a> • <a href="https://github.com/HugoFMRamos/holy-hell-game" target="_blank">View Code</a>
+                </div>
 
-      <img src="src/16911047577253NBLDODKCeDvBTDN.gif" alt="Fun GIF" class="corner-gif hecu">
-  </section>
+                <div class="card">
+                    <img src="src/nz12SY.png" alt="Withering Tears Screenshot" />
+                    <h3>Withering Tears</h3>
+                    <p>An interactive story game developed for an interactive narratives class. My first time utilizing the Twine engine.</p>
+                    <ul>
+                        <li>I was tasked with programming the game,</li>
+                        <li>Writing the story of the game,and</li>
+                        <li>Implement everything into the engine!</li>
+                        <li>Tech I used: Twine, HTML, CSS, Javascript</li>
+                    </ul>
+                    <a href="https://estojostudio.itch.io/withering-tears" target="_blank">Game Page</a> • <a href="https://github.com/HugoFMRamos/NI_G04_WITHERINGTEARS" target="_blank">View Code</a>
+                </div>
+            </div>
+            <br>
+            <div class="projects">
+                <div class="card">
+                    <img src="src/JzF3j6.png" alt="MeowWare! Screenshot" />
+                    <h3>MeowWare!</h3>
+                    <p>My second attempt at Game Jams. It is a Wario-Ware style game about closing window tabs! Very proud of this one!</p>
+                    <ul>
+                        <li>Jame Game #54 (Solo)</li>
+                        <li>Theme: Spam</li>
+                        <li>Special Object: Cat</li>
+                        <li>Tech I used: Unity, C#, GIMP, Audacity</li>
+                    </ul>
+                    <a href="https://aaaa-2003.itch.io/meowware" target="_blank">Game Page</a> • <a href="https://github.com/HugoFMRamos/jame-gam-54-game" target="_blank">View Code</a>
+                </div>
 
-  <section class="section">
-      <h2>Skills ✨</h2>
-      <div class="skills">
-          <div class="skill">Unity</div>
-          <div class="skill">Twine</div>
-          <div class="skill">C#</div>
-          <div class="skill">Python</div>
-          <div class="skill">Java</div>
-          <div class="skill">Git</div>
-          <div class="skill">Game Mechanics</div>
-          <div class="skill">Game Design</div>
-          <div class="skill">Mobile Development</div>
-          <div class="skill">XR</div>
-          <div class="skill">Storytelling</div>
-      </div>
-  </section>
+                <div class="card">
+                    <img src="src/5aDjTg.png" alt="Hen Stack Screenshot" />
+                    <h3>Hen Stack</h3>
+                    <p>My first ever game jam. It is a simple stacking game similar to Tower Bloxx. It's janky...</p>
+                    <ul>
+                        <li>Mini Jame Game #47 (Solo)</li>
+                        <li>Theme: Cheap Copy</li>
+                        <li>Special Object: Egg</li>
+                        <li>Tech I used: Unity, C#, MSPaint, Audacity</li>
+                    </ul>
+                    <a href="https://aaaa-2003.itch.io/hen-stack" target="_blank">Game Page</a> • <a href="https://github.com/HugoFMRamos/jame-gam-47-game" target="_blank">View Code</a>
+                </div>
+            </div>
 
-  <section class="section">
-      <h2>Contacts 📱</h2>
-      <p>Email: <a href="mailto:hugofilipemirandaramos2003@gmail.com" target="_blank">hugofilipemirandaramos2003@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/HugoFMRamos" target="_blank">HugoFMRamos</a></p>
-      <p>Itch.io: <a href="https://aaaa-2003.itch.io/" target="_blank">aaaa~</a></p>
-  </section>
+            <img src="src/16911047577253NBLDODKCeDvBTDN.gif" alt="Fun GIF" class="corner-gif hecu">
+        </section>
 
-  <footer>
-      © Hugo Ramos — 2025
-  </footer>
+        <section class="section">
+            <h2>Skills ✨</h2>
+            <div class="skills">
+                <div class="skill">Unity</div>
+                <div class="skill">Twine</div>
+                <div class="skill">C#</div>
+                <div class="skill">Python</div>
+                <div class="skill">Java</div>
+                <div class="skill">Git</div>
+                <div class="skill">Game Mechanics</div>
+                <div class="skill">Game Design</div>
+                <div class="skill">Mobile Development</div>
+                <div class="skill">XR</div>
+                <div class="skill">Storytelling</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Contacts 📱</h2>
+            <p>Email: <a href="mailto:hugofilipemirandaramos2003@gmail.com" target="_blank">hugofilipemirandaramos2003@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/HugoFMRamos" target="_blank">HugoFMRamos</a></p>
+            <p>Itch.io: <a href="https://aaaa-2003.itch.io/" target="_blank">aaaa~</a></p>
+        </section>
+
+        <footer>
+            © Hugo Ramos — 2025
+        </footer>
+    </div>
+        
+    <script>
+        var i = 0;
+        var opacity = 0;
+        var intervalID = 0;
+        var txt = '> Initializing PORTFOLIO.EXE... > Loading assets... > Running hugo.exe... > Status: READY.'; /* The text */
+        var speed = 30; /* The speed/duration of the effect in milliseconds */
+
+        function typeWriter() {
+            if (i < txt.length) {
+                let char = txt.charAt(i);
+
+                if (char === '>' && i > 1) {
+                    document.getElementById("terminal").innerHTML += "<br>&gt;";
+                } else {
+                    document.getElementById("terminal").innerHTML += char;
+                }
+
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+
+            if(i == txt.length) {
+                fadeOut();
+            }
+        }
+
+        function fadeOut(){
+            setInterval(hide, 1);
+        }
+
+        function hide() {
+            var terminalDiv = document.getElementById("terminalDiv");
+            opacity = Number(window.getComputedStyle(terminalDiv).getPropertyValue("opacity"))
+
+            if(opacity>0){
+                opacity=opacity-0.005;
+                        terminalDiv.style.opacity=opacity
+            }
+            else{
+                clearInterval(intervalID);
+            }
+        }
+    </script>
 </body>
 </html>
